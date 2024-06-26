@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply h-full antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.link-proweb-outline {
+    @apply font-medium border-[1px] border-slate-500 text-slate-600 rounded-md hover:text-slate-800 hover:bg-slate-100/50;
+}
+.link-proweb-primary {
+    @apply font-medium border-[1px] bg-teal-600 border-teal-800 text-white rounded-md hover:bg-teal-800;
+}
+.link-xs {
+    @apply text-xs px-2.5 py-1.5;
+}
+.link-sm {
+    @apply text-sm px-3.5 py-1.5;
+}
+.link-base {
+    @apply px-3.5 py-2;
+}
+.link-lg {
+    @apply text-lg py-3.5 py-2;
+}
+
+.nav-user-left {
+    @apply flex md:flex-col divide-x md:divide-x-0 md:divide-y divide-slate-100;
+}
+.nav-user-left li {
+    @apply w-full text-center md:text-left;
+}
+.nav-user-left a {
+    @apply text-[15px] px-4 py-3 block hover:text-teal-700 font-medium hover:bg-slate-200/25;
+}
+.nav-user-left li.active a {
+    @apply text-teal-700 border-b-2 md:border-b-0 md:border-l-2 border-teal-500;
+}
+.meta-postdescription p {
+    @apply text-slate-500;
+}
